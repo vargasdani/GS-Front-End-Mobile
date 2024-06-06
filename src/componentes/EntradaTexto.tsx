@@ -1,16 +1,20 @@
-import { Input, FormControl } from "native-base";
+import React from 'react';
+import { Input, FormControl } from 'native-base';
 
 interface InputProps {
   label?: string;
   placeholder: string;
   secureTextEntry?: boolean;
-  leftIcon?: React.ReactNode;
+  value: string;
+  onChangeText: (value: string) => void;
 }
 
 export function EntradaTexto ({ 
   label, 
   placeholder, 
-  secureTextEntry = false
+  secureTextEntry = false, 
+  value, 
+  onChangeText 
 } : InputProps) : JSX.Element {
   return (
     <FormControl mt={3}>
@@ -18,11 +22,13 @@ export function EntradaTexto ({
       <Input
         placeholder={placeholder}
         size="lg"
+        value={value}
         w="100%"
         borderRadius="lg"
         bgColor="gray.100"
         secureTextEntry={secureTextEntry}
         shadow={3}
+        onChangeText={onChangeText}
       />
     </FormControl>
   );

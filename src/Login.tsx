@@ -22,6 +22,10 @@ export default function Login({navigation}) {
           label="Senha"
           placeholder="Por favor, insira sua senha"
         />
+        <EntradaTexto
+          label="qtdLimpezaBarreira"
+          placeholder="Digite a quantidade"
+        />
       </Box>
       <Botao onPress={()=>navigation.navigate('Tabs')}>Entrar</Botao>
 

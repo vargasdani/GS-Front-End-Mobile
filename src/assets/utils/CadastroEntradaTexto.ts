@@ -5,24 +5,29 @@ const secoes=[
       entradaTexto: [
         {
           id:1,
-          label:'Nome',
-          placeholder:'Digite seu nome completo'
+          label:'email',
+          placeholder:'Digite seu e-mail'
         },
         {
           id:2,
-          label:'Email',
-          placeholder:'Digite seu e-mail'
+          label:'senha',
+          placeholder:'Digite sua senha'
         },
+        {
+          id:3,
+          label:'qtdLimpezaBarreira',
+          placeholder:'Digite a quantidade'
+        }
         
       ]
     },
     {
       id:2,
-      titulo:'Por fim, digite sua senha',
+      titulo:'Por fim, confirme sua senha',
       entradaTexto:[
         {
           id:1,
-          label:'Senha',
+          label:'senha',
           placeholder:'Por favor, insira aqui sua senha'
         }
       ]
